@@ -52,3 +52,4 @@ def validar_registro(registro):
 
 
     raise NotImplementedError("Pendiente: implementación del rol A, semana 10")
+                                  
