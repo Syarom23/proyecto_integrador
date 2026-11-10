@@ -22,7 +22,7 @@ def crear_reporte_error(origen, identificador, mensaje, categoria="PROCESAMIENTO
     # TODO B-S11-03: evitar que el error de un registro interrumpa el lote completo.
     raise NotImplementedError("Pendiente: implementación del rol B, semanas 11–12")
  
-parte 1 
+#parte 1 
 class DataLabError(Exception):
     """Excepción base de la aplicación."""
     pass
