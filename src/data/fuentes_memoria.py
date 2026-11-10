@@ -91,14 +91,15 @@ def leer_excel(archivo):
     df = pd.read_excel(archivo)
     return df.to_dict(orient="records")
 
+   
 try:
     from src.data.fuentes_memoria import cargar_desde_memoria
 except ModuleNotFoundError:
     def cargar_desde_memoria():
-        print("Advertencia: Usando función de respaldo para cargar_desde_memoria")
-        return []
+            print("Advertencia: Usando función de respaldo para cargar_desde_memoria")
+            return []
 
-    def cargar_datos(archivo=None, nombre_archivo=""):
+def cargar_datos(archivo=None, nombre_archivo=""):
     """Carga memoria o delega al lector según extensión."""
     if archivo is None:
         return cargar_desde_memoria()
