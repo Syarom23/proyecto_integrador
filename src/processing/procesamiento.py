@@ -97,4 +97,4 @@ def procesar_registros(registros):
         "errores": errores,
         "resumen": resumen
     }
-      
+
