@@ -42,7 +42,7 @@ class ErrorLecturaFuente(DataLabError):
 class ErrorConversionValor(DataLabError):
     """Se lanza cuando el valor de un registro no puede convertirse al formato esperado."""
     pass
-parte 2 
+#parte 2 
 from datetime import datetime
 
 def crear_reporte_error(origen, identificador, mensaje, categoria="PROCESAMIENTO"):
@@ -57,7 +57,7 @@ def crear_reporte_error(origen, identificador, mensaje, categoria="PROCESAMIENTO
         "categoria": categoria,
         "fecha_hora": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
-parte 3 
+#parte 3 
 def normalizar_registro(registro):
     """
     Normaliza un registro individual asegurando consistencia básica.
@@ -88,7 +88,7 @@ def validar_registro(registro):
     
     es_valido = len(motivos) == 0
     return es_valido, motivos
-parte 4 
+#parte 4 
 def procesar_lote_registros(registros):
     """
     Procesa un conjunto de registros aplicando normalización, validación y tipado.
@@ -147,7 +147,7 @@ def procesar_lote_registros(registros):
             errores_detectados.append(reporte)
 
     return resultados, errores_detectados
-parte 5 
+#parte 5 
 # Lote de pruebas con diferentes escenarios
 lote_prueba = [
     {"id": "REG-001", "valor": " 450.70 "},     # Válido con espacio en blanco
